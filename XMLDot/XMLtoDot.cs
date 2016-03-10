@@ -126,6 +126,7 @@ namespace XMLDot
             }
             writers.Flush();
             writers.Close();
+
         }
 
     }
