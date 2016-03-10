@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{061CF34F-2EF2-48D7-8733-FC1F5F87668E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <AssemblyName>ConsoleApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotFPE.Library">
+      <HintPath>libfromexteranl\DotFPE.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Async\Client.cs" />
+    <Compile Include="Async\myTask.cs" />
+    <Compile Include="Configuration\Client.cs" />
+    <Compile Include="Configuration\ConfigSettings.cs" />
+    <Compile Include="delegate\Client.cs" />
+    <Compile Include="delegate\Simple.cs" />
+    <Compile Include="ExpressionTrees\buildQueryFromET.cs" />
+    <Compile Include="ExpressionTrees\Client.cs" />
+    <Compile Include="ExpressionTrees\CreateET.cs" />
+    <Compile Include="ExpressionTrees\LINQProvider.cs" />
+    <Compile Include="ExpressionTrees\ModifyET.cs" />
+    <Compile Include="ExpressionTrees\Simple.cs" />
+    <Compile Include="Extension\Client.cs" />
+    <Compile Include="Extension\ExtensionBasic.cs" />
+    <Compile Include="Generic\AbastrctGeneric.cs" />
+    <Compile Include="Generic\CastingGeneric.cs" />
+    <Compile Include="Generic\Client.cs" />
+    <Compile Include="Generic\DerivedLinkedList.cs" />
+    <Compile Include="Generic\GenericLinkedList.cs" />
+    <Compile Include="Generic\GenericMethod\GenericMethod.cs" />
+    <Compile Include="Generic\GenericMethod\GeneriStaticMethod.cs" />
+    <Compile Include="Generic\GenericOperator\LinkedListOperator.cs" />
+    <Compile Include="Generic\GenericStack.cs" />
+    <Compile Include="Generic\GernericDelegates\GenericDelegate.cs" />
+    <Compile Include="Generic\InheritanceFromGeneric.cs" />
+    <Compile Include="Generic\IsAsGeneric.cs" />
+    <Compile Include="Generic\ObjectBasedStack.cs" />
+    <Compile Include="Generic\WithConstraintLinkedList.cs" />
+    <Compile Include="Lambda\Async.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lambda\Client.cs" />
+    <Compile Include="Lambda\Simple.cs" />
+    <Compile Include="Math\Calculation.cs" />
+    <Compile Include="XMLDot\XMLtoDot.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Walker\Edge.cs" />
+    <Compile Include="Walker\Graph.cs" />
+    <Compile Include="Walker\Node.cs" />
+    <Compile Include="Walker\Walker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DLR-script\" />
+    <Folder Include="Generic\GenericEvent\" />
+    <Folder Include="Generic\GenericReflection\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

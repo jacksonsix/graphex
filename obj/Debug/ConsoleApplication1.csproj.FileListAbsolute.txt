@@ -1,0 +1,7 @@
+c:\users\jliang\documents\visual studio 2012\Projects\testsolution\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+c:\users\jliang\documents\visual studio 2012\Projects\testsolution\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+c:\users\jliang\documents\visual studio 2012\Projects\testsolution\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+c:\users\jliang\documents\visual studio 2012\Projects\testsolution\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+c:\users\jliang\documents\visual studio 2012\Projects\testsolution\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+c:\users\jliang\documents\visual studio 2012\Projects\testsolution\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\JLiang\Documents\Visual Studio 2012\Projects\testsolution\ConsoleApplication1\bin\Debug\DotFPE.Library.dll
